@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #81bce6;
+    /*-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;*/
+}
+
+h1 {
+    color: #81bce6;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+section p {
+    align-items: stretch;
+    padding: inherit;
+}
+
+ul {
+    font-family: 'Lato', sans-serif;
+    color: #81bce6;
+    padding: 0 2rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+
+article {
+    height: auto;
+    width: 33%;
+    margin: 10px;
+}
+
+article img {
+    width: 100%;
+}
+
+.product {
+    position: relative;
+    width: 100%;
+    border: 2px solid #81bce6;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-bottom-width: 0;
+    line-height: 0;
+}
+
+.front {
+    position: absolute;
+    transition: all 0.6s ease;
+}
+
+.back {
+    position: absolute;
+    top: 0px;
+    padding: 1rem;
+    align-items: center;
+    right: 5px;
+    transform: rotateY(90deg);
+}
+
+.square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #81bce6;
+    top: -2px;
+    right: -2px;
+}
+
+.square a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #81bce6;
+    width: 100%;
+    padding-top: .25rem;
+    text-decoration: none;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border: 1px solid #81bce6;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.icons {
+    flex: 1;
+    color: #81bce6;
+    border: .5px solid #81bce6;
+    width: 20%;
+    padding: 1rem;
+}
+
+.icons:hover {
+    background-color: #81bce6;
+    color: white;
+}
+
+.size-button:hover .size {
+  visibility: visible;
+  opacity: 1;
+}
+
+.size:hover {
+  opacity: 1;
+}
+
+.size-button+.size {
+    transition: opacity 2s;
+}
+
+.size {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 150px;
+    width: 50px;
+    bottom: 53px;
+    left: 99px;
+    align-items: center;
+    border: 2px solid #81bce6;
+    opacity: 0;
+}
+
+.size img {
+    width: inherit;
+}
+
+.xlarge {
+    /*position: relative;*/
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-image: url(assets/tshirt.svg);
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
+    text-align: center;
+    /*margin: 2.5px;
+    justify-content: center;*/
+}
+
+.large {
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-image: url(assets/tshirt.svg);
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.medium {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(assets/tshirt.svg);
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
+    justify-content: center;
+}
+
+.small {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-image: url(assets/tshirt.svg);
+    background-repeat: no-repeat;
+    padding: .25rem;
+    margin: .25rem 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.color-button:hover .colors {
+  visibility: visible;
+  opacity: 1;
+}
+
+.color-button:hover {
+  opacity: 1;
+}
+
+/*.color-button+.colors{
+    transition: opacity 2s;
+}*/
+
+.colors {
+  opacity: 0;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    background: white;
+    height: 110px;
+    width: 45px;
+    /*padding: .25rem;*/
+    margin: 10px auto;
+    bottom: 43px;
+    right: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #81bce6;
+    /*box-sizing: border-box;*/
+}
+
+.blue {
+    width: 20px;
+    height: 20px;
+    background-color: #81bce6;
+    padding: 1px;
+    margin: 1.5px;
+    /*position: absolute;
+  left: 125px;*/
+}
+
+.pink {
+    width: 20px;
+    height: 20px;
+    background-color: #e275a7;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5px;
+}
+
+.yellow {
+    width: 20px;
+    height: 20px;
+    background-color: #e5b178;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5px;
+}
+
+.green {
+    width: 20px;
+    height: 20px;
+    background-color: #8bb992;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    flex: 1;
+    font-family: 'Lato', sans-serif;
+    color: #81bce6;
+    size: .5rem;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.dollar-symbol {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.outer {
+    width: 200px;
+    height: 200px;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+
+/*
+.container menu {
+  display: flex;
+  width: 1000px;
+  background: white;
+  margin: 0 auto;
+}
+*/
+
+
+/*.menu:hover {
+  display: none;
+}*/
+
+
+/*
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding: 3px;
+  border: 1px solid black;
+}
+*/
+
+
+/* make original menu square not font awesome
+.colorsquare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #81bce6;
+  width: 100%;
+  padding-top: .25rem;
+  text-decoration: none;
+}
+*/
+
+
+/*.square {   WORKED BUT TRYING ABSOULTE ABOVE
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border: 3px solid #81bce6;
+  top: -19px;
+  right: -265.5px;
+}*/
